@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h4>Tanuló adatok</h4>
+        <hr>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form [formGroup]="studentForm">
+            <div class="mb-3">
+                <label for="id" class="form-label">id</label>
+                <input type="text" class="form-control" id="id" formControlName="id">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Név</label>
+                <textarea type="text" class="form-control" id="name" formControlName="name" row="2"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="mark" class="form-label">Érdemjegy</label>
+                <textarea type="number" class="form-control" id="mark" formControlName="mark" row="2"></textarea>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="class" class="form-label">Tankör</label>
+                <input type="text" class="form-control" id="class" formControlName="class">
+            </div>
+
+            <div class="mb-3">
+                <label for="class" class="form-label">Tárgy</label>
+                <input type="text" class="form-control" id="subject" formControlName="subject">
+            </div>
+
+            <div class="text-end">
+                <button class="btn btn-outline-primary" (click)="addStudent">Mentés</button>
+            </div>
+
+        </form>
+    </div>
+</div>
